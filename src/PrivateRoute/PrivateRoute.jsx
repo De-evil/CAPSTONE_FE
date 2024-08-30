@@ -8,10 +8,11 @@ const PrivateRoute = ({children}) => {
     const location = useLocation();
 
     if(loading){
-        return
+        return (
         <div className="text-center">
         <Spinner aria-label="Center-aligned spinner example" />
       </div>
+      );
     }
 
     if(user){
